@@ -14,7 +14,7 @@ const Register = () => {
     e.preventDefault();
 
     axios
-      .post("http://localhost:8000/api/auth/register", formData)
+      .post("https://mernauth-678p.onrender.com/api/auth/register", formData)
       .then(() => {
         console.log(`Form data sent to Backend...`);
         setFormdata({
