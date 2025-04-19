@@ -10,7 +10,7 @@ const RegisteredEmail = () => {
   
   function sentToBackend() {
     axios
-      .post(`http://localhost:8000/api/auth/verifyOTPforPasswordReset/${email}`)
+      .post(`https://mernauth-678p.onrender.com/api/auth/verifyOTPforPasswordReset/${email}`)
       .then(() => {
         console.log(`Email sent to Backend to send OTP for reset Password`);
         toast.success("Email submitted. Please check your inbox.");
