@@ -16,7 +16,7 @@ const Login = () => {
     e.preventDefault();
 
     axios
-      .post("http://localhost:8000/api/auth/login", formData)
+      .post("https://mernauth-678p.onrender.com/api/auth/login", formData)
       .then((res) => {
         console.log(`Data sent to Backend...`);
         setFormdata({
