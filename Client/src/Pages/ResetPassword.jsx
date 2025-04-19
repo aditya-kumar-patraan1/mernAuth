@@ -33,7 +33,7 @@ const ResetPassword = () => {
       password
     }
 
-    axios.put("http://localhost:8000/api/auth/resetPassword",myData).then(()=>{
+    axios.put("https://mernauth-678p.onrender.com/api/auth/resetPassword",myData).then(()=>{
       console.log("Data sent to backend");
     }).catch((e)=>{
       console.log("Data not sent to Backend");
