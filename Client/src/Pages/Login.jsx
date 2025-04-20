@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { toast, Toaster } from "react-hot-toast";
-import { useNavigate } from "react-router-dom";
 import { FiMail, FiLock } from "react-icons/fi";
+import { useNavigate, NavLink } from "react-router-dom";
 
 const Login = () => {
   const Navigate = useNavigate();
@@ -123,12 +123,12 @@ const Login = () => {
         <div className="text-center mt-6">
           <p className="text-sm text-gray-600">
             Don't have an account?{" "}
-            <a
-              href="/registerPage"
+            <NavLink
+              to="/RegisterPage"
               className="text-blue-600 hover:underline font-medium"
             >
               Register here
-            </a>
+            </NavLink>
           </p>
         </div>
       </div>
