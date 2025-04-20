@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { toast, Toaster } from "react-hot-toast";
 import { FiUser, FiMail, FiLock } from "react-icons/fi";
+import { useNavigate, NavLink } from "react-router-dom";
 
 const Register = () => {
   const [formData, setFormdata] = useState({
@@ -138,7 +139,7 @@ const Register = () => {
               type="button"
               className="text-blue-600 hover:underline text-sm hover:cursor-pointer"
             >
-              <a href="/LoginPage">Already have an account?</a>
+              <NavLink to="/LoginPage">Already have an account?</NavLink>
             </button>
           </div>
         </form>
